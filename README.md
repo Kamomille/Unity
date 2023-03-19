@@ -1,5 +1,7 @@
 # Projet de peinture en VR - Unity
 
+A rendre pour le 20/03/2023
+
 Le projet VR de peinture est une expérience immersive de peinture en réalité virtuelle. Les joueurs peuvent se téléporter dans un atelier virtuel et utiliser différents outils pour peindre des œuvres d'art numériques.
 
  Les fonctionnalités comprennent :
@@ -8,8 +10,8 @@ Le projet VR de peinture est une expérience immersive de peinture en réalité 
 
 | Démonstration | Explication |
 |---------|---------|
-| ![alt text 1](GitImage/) | **Pinceau** : pour peindre sur des toiles virtuelles|
-| ![alt text 2](GitImage/) | **Spray** : Pulverise la peinture|
+| ![alt text 1](GitImage/) | **Pinceau** : Pour peindre|
+| ![alt text 2](GitImage/) | **Spray** : Pour pulveriser la peinture|
 | ![alt text 2](GitImage/) | **Baguette magique** : |
 
 
@@ -29,12 +31,26 @@ Le projet VR de peinture est une expérience immersive de peinture en réalité 
 | Démonstration | Explication |
 |---------|---------|
 | ![alt text 1](GitImage/teleportation.gif) | **Téléportation** : Sélectionner le rocher magique pour vous téléporter dans l'atelier, ou l'armoire magique pour retourner dans le monde originel|
-| ![alt text 2](GitImage/) | **Taille du pinceau** : Peinture, possibilité de changer la taille et la couleur du peinceau|
-| ![alt text 2](GitImage/dessin_pomme.png) | **Score** : Dessiner une pomme puis sélectionner le bouclier magique pour obtenir votre score en pourcentage|
+| ![alt text 2](GitImage/) | **Taille du pinceau** : Peinture, possibilité de changer la taille (avec les pinceau accroché au mur à gauche) et la couleur du pinceau (palette)|
+| ![alt text 2](GitImage/dessin_pomme.png) | **Score** : Dessiner une pomme puis sélectionner le bouclier magique pour obtenir votre score de ressemblance en pourcentage. |
 
+Fonctionnement général
+```mermaid
+ graph LR
+    Hit_Shield --> Convert_Format_To_Texture
+    Convert_Format_To_Texture --> Compare_Image
+    Compare_Image --> Calculate_Percentage
 
-## Les éléments de décor intéressants
-Renard, papillon
+```
+Calcul du score :
+
+Le programme va compare les 2 textures en calculant la différence de chaque canal de couleur (R, V, B et Alpha) pour chaque pixel, puis en calculant la moyenne de toutes les différences. 
+
+## Autre
+| Démonstration | Explication |
+|---------|---------|
+| ![alt text 1](GitImage/renard.gif) | **Renard** : parce que c'est trop mignon !! Regardez le faire ces petites roulades|
+
 
 
 ## Groupe
