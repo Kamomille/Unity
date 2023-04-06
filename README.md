@@ -9,28 +9,19 @@ Ce projet est effectué dans le cadre du projet de dernière année pour le modu
 
 
 # Sommaire des fonctionnalités
-- [Interactions de peinture différentes](#interactions-de-peinture-différentes)
-- [Palette de couleurs](#palette-de-couleurs)
-- [Gestion de la sélection des outils](#selection-doutil-souhaité-en-lattrapant)
+- [Les différents outils disponible](#les-différents-outils-disponible)
+- [Gestion de la sélection des outils](#gestion-de-la-sélection-des-outils)
+- [Mini-jeu](#mini-jeu)
 - [Fonctionnalité supplementaire](#fonctionnalité-supplementaire)
 
-## Interactions de peinture différentes
+## Les différents outils disponible
 [*(Back to top)*](#sommaire-des-fonctionnalités)
+
 
 | Démonstration | Explication |
 |---------|---------|
-| ![alt text 1](GitImage/brush_demo.gif) | **Pinceau** : Pour peindre|
-| ![alt text 2](GitImage/spray_demo.gif) | **Spray** : Pour pulveriser la peinture|
-| ![alt text 2](GitImage/wand_demo.gif) | **Baguette magique** : |
-
-
-## Palette de couleurs 
-[*(Back to top)*](#sommaire-des-fonctionnalités)
-
-| Démonstration | Explication |
-|---------|---------|
-| ![alt text 1](GitImage/palette_mobile.gif) | **Mobile** : attachée à la main gauche|
-| ![alt text 2](GitImage/) | **Couleurs** : Choix des couleurs|
+| ![alt text 1](GitImage/brush_demo.gif) | **3 Interactions de peinture différentes** : Pinceau + Spray + Baguette magique |
+| ![alt text 1](GitImage/palette_mobile.gif) | **Une palette mobile de 4 couleur** : elle est attachée à la main gauche du joueur pour bouger en même temps que ce dernier|
 
 
 ## Gestion de la sélection des outils
@@ -38,10 +29,10 @@ Ce projet est effectué dans le cadre du projet de dernière année pour le modu
 
 | Démonstration | Explication |
 |---------|---------|
-| ![alt text 1](GitImage/rangementPinceau.gif) | **Gestion chute outil** : pour ajouter plus de confort de jeu, si l'utilisateur lâche son pinceau celui-ci revient automatiquement à sa place initiale (sur la table), cela est possible grâce au script "StoreTool".|
+| ![alt text 1](GitImage/rangementPinceau.gif) | **Gestion chute outil** : pour ajouter plus de confort de jeu, si l'utilisateur lâche son pinceau celui-ci revient automatiquement à sa place initiale (sur la table), cela est possible grâce au script "StoreTool" qui hérite de "XRGrabInteractable"|
 
 
-## Mini-jeu permettant de reproduire le dessin
+## Mini-jeu
 [*(Back to top)*](#sommaire-des-fonctionnalités)
 
 
